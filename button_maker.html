@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Button Maker</title>
+    <link rel="stylesheet" href="button_maker.css" />
+  </head>
+  <body>
+    <div class="bg-container">
+      <h1 class="heading">Button Maker</h1>
+      <div class="main-container">
+        <div class="form-container">
+          <div class="input-container">
+            <label class="labelText" for="bgColor">background color</label>
+            <input class="inputField" type="text" name="bgColor" id="bgColor" />
+          </div>
+
+          <div class="input-container">
+            <label class="labelText" for="fontColor">font color</label>
+            <input
+              class="inputField"
+              type="text"
+              name="fontColor"
+              id="fontColor"
+            />
+          </div>
+
+          <div class="input-container">
+            <label class="labelText" for="fontSize">font size (in px)</label>
+            <input
+              class="inputField"
+              type="text"
+              name="fontSize"
+              id="fontSize"
+            />
+          </div>
+
+          <div class="input-container">
+            <label class="labelText" for="fontWeight">font weight</label>
+            <input
+              class="inputField"
+              type="number"
+              name="fontWeight"
+              id="fontWeight"
+            />
+          </div>
+
+          <div class="input-container">
+            <label class="labelText" for="padding">padding (in px)</label>
+            <input class="inputField" type="text" name="padding" id="padding" />
+          </div>
+
+          <div class="input-container">
+            <label class="labelText" for="borderRadius"
+              >border radius (in px)</label
+            >
+            <input
+              class="inputField"
+              type="text"
+              name="borderRadius"
+              id="borderRadius"
+            />
+          </div>
+
+          <div class="btn-container">
+            <button class="btn" onclick="onApply()">Apply</button>
+          </div>
+        </div>
+        <div class="customBtn">
+          <button id="customButton">Custom Button</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="button_maker.js"></script>
+  </body>
+</html>
